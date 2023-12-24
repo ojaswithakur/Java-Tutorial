@@ -122,7 +122,7 @@ public class questions{
 }
 */
 
-//enter the numbers till the user wants and at the end it should display the count of positive negative and zeroes entered.
+/*
 //value of one number raised to the power of another
 import java.util.*;
 public class questions{
@@ -141,5 +141,37 @@ public class questions{
         System.out.println("Enter the power to which base is raised:");
         int power= sc.nextInt();
         calDegree(base,power);
+    }
+}
+*/
+
+//enter the numbers till the user wants and at the end it should display 
+//the count of positive negative and zeroes entered.
+import java.util.*;
+public class questions{
+    public static void main(String args[]){
+        int input=1;
+        int positive=0;
+        int negative=0;
+        int zeroes=0;
+        while(input==1){
+            System.out.print("Eneter the number:");
+            Scanner sc= new Scanner(System.in);
+            int number=sc.nextInt();
+            if(number > 0){
+                positive=positive+1;
+            }
+            else if(number < 0){
+                negative=negative+1;
+            }
+            else{
+                zeroes=zeroes+1;
+            }
+            System.out.println("Press 1 to continue and 0 to exit");
+            input=sc.nextInt();
+        }
+        System.out.println("Positive= "+positive);
+        System.out.println("Negative= "+negative);
+        System.out.println("Zeroes= "+zeroes);
     }
 }
