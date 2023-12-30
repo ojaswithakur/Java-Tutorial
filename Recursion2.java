@@ -210,6 +210,7 @@ public static void subsequencesUnique(String str, int idx, String newString, Has
    }
 */
 
+/*
 //keypad combinations
    public static String[] keypad={".", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tu", "vwx", "yz"};
    public static void printComb(String str, int idx, String combinations){
@@ -231,4 +232,5 @@ public static void subsequencesUnique(String str, int idx, String newString, Has
     String st=sc.nextLine();
     printComb(st, 0, "");
    }
+   */ 
 }
